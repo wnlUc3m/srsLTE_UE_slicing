@@ -1,0 +1,2 @@
+/usr/bin/ar cr libsrsenb_upper.a  CMakeFiles/srsenb_upper.dir/rrc.cc.o CMakeFiles/srsenb_upper.dir/pdcp.cc.o CMakeFiles/srsenb_upper.dir/s1ap.cc.o CMakeFiles/srsenb_upper.dir/rlc.cc.o CMakeFiles/srsenb_upper.dir/gtpu.cc.o
+/usr/bin/ranlib libsrsenb_upper.a

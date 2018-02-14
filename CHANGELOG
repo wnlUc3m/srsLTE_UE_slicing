@@ -1,0 +1,49 @@
+Change Log for Releases
+==============================
+
+## 002.000.000
+  * Added fully functional srsENB to srsLTE code
+  * Merged srsUE code into srsLTE and reestructured PHY code 
+  * Added support for SoapySDR devices (eg LimeSDR)
+  * Fixed issues in RLC AM 
+  * Added support for NEON and AVX in many kernels and Viterbi decoder
+  * Added support for CPU affinity
+  * Other minor bug-fixes and new features 
+
+## 001.004.000
+  * Fixed issue in rv for format1C causing incorrect SIB1 decoding in some networks
+  * Improved PDCCH decoding BER (fixed incorrect trellis initialization)
+  * Improved PUCCH RX performance
+
+## 001.003.000
+
+* Bugfixes: 
+  * x300 master clock rate
+  * PHICH: fixed bug causing more NACKs
+  * PBCH: fixed bug in encoding function
+  * channel estimation: fixed issue in time interpolation
+  * DCI: Fixed bug in Format1A packing
+  * DCI: Fixed bug in Format1C for RA-RNTI
+  * DCI: Fixed overflow in MIMO formats
+  
+* Improvements: 
+  * Changed and cleaned DCI blind search API
+  * Added eNodeB PHY processing functions
+
+## 001.002.000
+
+* Bugfixes: 
+  * Estimation of extrapolated of out-of-band carriers 
+  * PDCCH REG interleaving for certain cell IDs
+  * MIB decoding 
+  * Overflow in viterbi in PBCH
+
+* Improvements: 
+  * Synchronization in long multipath channels
+  * Better calibration of synchronization and estimation
+  * Averaging in channel estimation
+  * Improved 2-port diversity decoding
+
+
+## 001.001.000
+* Added support for BladeRF

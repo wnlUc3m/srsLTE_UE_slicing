@@ -1,0 +1,86 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3677950069/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3677950069.dir/build.make CMakeFiles/cmTryCompileExec3677950069.dir/build
+make[1]: Entering directory `/home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3677950069.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3677950069.dir/CheckSymbolExists.c.o   -c /home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3677950069
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3677950069.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3677950069.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3677950069 -rdynamic 
+CMakeFiles/cmTryCompileExec3677950069.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3677950069] Error 1
+make: *** [cmTryCompileExec3677950069/fast] Error 2
+
+File /home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2772250311/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2772250311.dir/build.make CMakeFiles/cmTryCompileExec2772250311.dir/build
+make[1]: Entering directory `/home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2772250311.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2772250311.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2772250311
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2772250311.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2772250311.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2772250311 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2772250311] Error 1
+make: *** [cmTryCompileExec2772250311/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_ERROR_INCOMPATIBLE failed with the following output:
+Change Dir: /home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2546582285/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2546582285.dir/build.make CMakeFiles/cmTryCompileExec2546582285.dir/build
+make[1]: Entering directory `/home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2546582285.dir/src.cxx.o
+/usr/bin/c++    -march=native -Wall -Wno-comment -Wno-reorder -Wno-unused-but-set-variable -Wno-unused-variable -std=c++03 -O3 -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -DHAVE_ERROR_INCOMPATIBLE -mavx2   -Werror=incompatible-pointer-types -o CMakeFiles/cmTryCompileExec2546582285.dir/src.cxx.o -c /home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: error: -Werror=incompatible-pointer-types: no option -Wincompatible-pointer-types
+make[1]: Leaving directory `/home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2546582285.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec2546582285/fast] Error 2
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test HAVE_VISIBILITY_HIDDEN failed with the following output:
+Change Dir: /home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3585269871/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3585269871.dir/build.make CMakeFiles/cmTryCompileExec3585269871.dir/build
+make[1]: Entering directory `/home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3585269871.dir/src.cxx.o
+/usr/bin/c++    -march=native -Wall -Wno-comment -Wno-reorder -Wno-unused-but-set-variable -Wno-unused-variable -std=c++03 -O3 -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -DHAVE_VISIBILITY_HIDDEN  -march=native -Wall -Wno-comment -Wno-write-strings -Wno-format-extra-args -Winline -Wno-unused-result -Wno-format -std=c99 -D_GNU_SOURCE -O3 -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -Ofast -funroll-loops   -fvisibility=hidden -o CMakeFiles/cmTryCompileExec3585269871.dir/src.cxx.o -c /home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option '-std=c99' is valid for C/ObjC but not for C++ [enabled by default]
+Linking CXX executable cmTryCompileExec3585269871
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3585269871.dir/link.txt --verbose=1
+/usr/bin/c++    -march=native -Wall -Wno-comment -Wno-reorder -Wno-unused-but-set-variable -Wno-unused-variable -std=c++03 -O3 -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -DHAVE_VISIBILITY_HIDDEN  -march=native -Wall -Wno-comment -Wno-write-strings -Wno-format-extra-args -Winline -Wno-unused-result -Wno-format -std=c99 -D_GNU_SOURCE -O3 -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -Ofast -funroll-loops    CMakeFiles/cmTryCompileExec3585269871.dir/src.cxx.o  -o cmTryCompileExec3585269871 -rdynamic 
+make[1]: Leaving directory `/home/ggarcia/srsLTE_multipleUE/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}

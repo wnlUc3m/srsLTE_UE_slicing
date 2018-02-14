@@ -1,0 +1,2 @@
+/usr/bin/ar cr libsrsenb_mac.a  CMakeFiles/srsenb_mac.dir/scheduler_ue.cc.o CMakeFiles/srsenb_mac.dir/mac.cc.o CMakeFiles/srsenb_mac.dir/scheduler_metric.cc.o CMakeFiles/srsenb_mac.dir/ue.cc.o CMakeFiles/srsenb_mac.dir/scheduler.cc.o CMakeFiles/srsenb_mac.dir/scheduler_harq.cc.o
+/usr/bin/ranlib libsrsenb_mac.a

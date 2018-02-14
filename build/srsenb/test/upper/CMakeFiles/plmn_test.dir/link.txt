@@ -1,0 +1,1 @@
+/usr/bin/c++    -march=native -Wall -Wno-comment -Wno-reorder -Wno-unused-but-set-variable -Wno-unused-variable -std=c++03 -O3 -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -O3 -DNDEBUG    CMakeFiles/plmn_test.dir/plmn_test.cc.o  -o plmn_test -rdynamic ../../src/upper/libsrsenb_upper.a ../../../lib/src/asn1/libsrslte_asn1.a 
